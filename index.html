@@ -188,29 +188,46 @@
 <!-- START: right column -->
 <div id="right-column">
 
-<h1 style="font-size: 30px;">Handling Missing Data with Graph Representation Learning</h1>
+<!-- <h1 style="font-size: 30px;">Handling Missing Data with Graph Representation Learning</h1> -->
+<h1 style="font-size: 30px;">Semi-Supervised Hierarchical Graph Classification</h1>
 
 <div class="call-out-green">
-<p> <b><font color="00FFFF">GRAPE</font></b> is a general framework for feature imputation and label prediction in the presence of missing data.
-We show that a seemingly unrelated missing data problem (imputing missing values and learning subsequent tasks) can naturally be solved with graphs and we propose the first graph-based solution to solve the problem.
+<p> <b><font color="00FFFF">In</font></b> this work, we study node classification in a hierarchical graph perspective 
+  which arises in many domains such as social network and document collection.
+  In the hierarchical graph, each node is represented with one graph instance. We propose the Hierarchical Graph Mutual
+  Information (HGMI) to model consistency among different levels of hierarchical graph and design two novel semi-supervised solutions named SEAL-C/AI
+  for node labels are usually limited in node classification
+  
+  we present a hierarchical graph perspective which arises in many domains such as social network and document collection.
+We study the node classification problem in the hierarchical graph where a “node” is a
+graph instance. 
+  <!-- classification and node classification are two graph learning problems. A node of a graph usually represents a real-world entity, e.g., a user in a social network, or a
+  document in a document citation network. In this work, we model a node as graph instance, which leads to a hierarchical graph perspective which arises in many domains such as social network,
+  biological network and document collection. -->
+  <!-- is a general framework for feature imputation and label prediction in the presence of missing data.
+We show that a seemingly unrelated missing data problem (imputing missing values and learning subsequent tasks) can naturally be solved with graphs and we propose the first graph-based solution to solve the problem. -->
 </p>
 </div>
 
 <ul>
-  <li><a href="https://snap.stanford.edu/grape/#motivation">Motivation</a></li>
-  <li><a href="https://snap.stanford.edu/grape/#method">Method</a></li>
-  <li><a href="https://snap.stanford.edu/grape/#results">Key Results</a></li>
-  <li><a href="https://snap.stanford.edu/grape/#code">Code and Datasets</a></li>
-  <li><a href="https://snap.stanford.edu/grape/#contributors">Contributors</a></li>
-  <li><a href="https://snap.stanford.edu/grape/#references">References</a></li>
+  <li><a href="https://kochsnow.github.io/Semi_Supervised_Hierarchical_Graph_Classification/#motivation">Motivation</a></li>
+  <li><a href="https://kochsnow.github.io/Semi_Supervised_Hierarchical_Graph_Classification/#method">Method</a></li>
+  <li><a href="https://kochsnow.github.io/Semi_Supervised_Hierarchical_Graph_Classification/#results">Key Results</a></li>
+  <li><a href="https://kochsnow.github.io/Semi_Supervised_Hierarchical_Graph_Classification/#code">Code and Datasets</a></li>
+  <li><a href="https://kochsnow.github.io/Semi_Supervised_Hierarchical_Graph_Classification/#contributors">Contributors</a></li>
+  <li><a href="https://kochsnow.github.io/Semi_Supervised_Hierarchical_Graph_Classification/#references">References</a></li>
 </ul>
 
 <a name="motivation"></a><h2>Motivation</h2>
 <p>
+  A node of a graph usually is linked with a real-world entity such as a user belong to a social network, or a
+  document in one document citation network. It is novel and interesting to represent a node with graph instance which leads to <b>a hierarchical graph perspective<b>.
+  However, there is a lack of theoretical guarantee and practical solution for the hierarchical graph setting.
+
 Issues with learning from incomplete data arise in many domains including computational biology, clinical studies, survey research, finance, and economics.
 <b>The missing data problem</b> has previously been approached in two different ways: 
 
-</p><ul>
+<!-- </p><ul>
 <li><b>Feature imputation</b>: missing feature values are estimated based on observed values.</li>
 <li><b>Label prediction</b>: downstream labels are learned directly from incomplete data.</li>
 </ul>
@@ -222,18 +239,21 @@ While existing approaches have rich theoretical groundings, they often share com
 <li>Many approaches cannot generalize to unseen data without retraining.</li>
 </ul>
 Importantly, there lacks a unified solution for the missing data problem.
-<p></p>
+<p>
+   -->
+</p>
 
 
 <a name="method"></a><h2>Method</h2>
 
 <p>
-Here we propose GRAPE, a general framework for feature imputation and label prediction in the presence of missing data. 
+<!-- Here we propose GRAPE, a general framework for feature imputation and label prediction in the presence of missing data. 
 Our key innovation is to formulate the problem using a <b>bipartite graph representation</b>, 
 where observations and features are two types of nodes, 
 and the observed feature values are attributed edges between the nodes. 
 Under this graph representation, we formulate the feature imputation as an edge-level prediction task, 
-and the label prediction as a node-level prediction task, as is shown in Figure 1.
+and the label prediction as a node-level prediction task, as is shown in Figure 1. -->
+
 </p>
 
 
