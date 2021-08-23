@@ -292,19 +292,18 @@ on the HGMI. Figure 2 shows the schematic diagram of the learning framework SEAL
 <a name="results"></a><h2>Key Results</h2>
 
 <p>
-We experiment on 9 UCI datasets from different domains.
-We compare GRAPE against 5 commonly used imputation methods,
-and state-of-the-art deep learning models.
-We show in Figure 3 that GRAPE yields 20% lower mean absolute error (MAE) for feature imputation,
-and 10% lower MAE for label prediction, compared with the best baselines.
+We evaluate our SEAL-C/AI methods on various data including synthetic data, text data and
+social network data sets. Compared with existing methods, our methods obtain the state of the art performance.
+The following figures show our comparative results:
+Figure 3 shows the evaluatation results on QQ group dataset which is a socical network dataset. And we can see our methods SEAL-CI/AI outperform than the state of the art MIRACLE by at least 5%.
 </p>
 
 <div align="center">
-<img id="results1" src="./GRAPE_files/results1.png" alt="" height="auto" width="700"><br>
+<img id="results1" src="./SEAL_files/results1.png" alt="" height="auto" width="700"><br>
 <figcaption><b>Figure 3: Overall comparisions over GRAPE and baselines.</b></figcaption>
 </div>
 
-<p>
+<!-- <p>
 Additionally, we vary the missing data ratio from 10% to 70%.
 For both tasks, we observe consistent gains under different missing data ratios.
 </p>
@@ -312,7 +311,7 @@ For both tasks, we observe consistent gains under different missing data ratios.
 <div align="center">
 <img id="results2" src="./GRAPE_files/results2.png" alt="" height="auto" width="700"><br>
 <figcaption><b>Figure 4: Comparisions when the missing data raio varies.</b></figcaption>
-</div>
+</div> -->
 
 <p>
 Please refer to our paper for detailed explanations and more results.
